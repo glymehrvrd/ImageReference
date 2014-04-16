@@ -1,0 +1,14 @@
+{
+    "pairs":[
+        {
+            "original_pic": "cookie.jpg",
+            "match_pic": "cookie.jpg"
+        },
+        {
+            "original_pic": "cookie.jpg",
+            "match_pic": "cookie.jpg"
+        }
+    ],
+    "ori_pic_dir": "/home/glyme/Zend/workspaces/DefaultWorkspace/image-detect/testpics/",
+    "match_pic_dir": "/home/glyme/Zend/workspaces/DefaultWorkspace/image-detect/picstore/"
+}

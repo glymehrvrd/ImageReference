@@ -1,0 +1,26 @@
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<body>
+<h1>Image Detector 测试页面</h1>
+<fieldset style="border-color:#E2DED6;border-width:1px;border-style:Solid;">
+    <legend style="color:#333333;font-size:0.8em;font-weight:bold;">
+        POST方式
+    </legend>
+
+    <form name="form1" id="img" method="post" action="./index.php"
+        enctype="multipart/form-data">
+        <input type="file" name="img" id="img" /> <input type="submit"
+            name="submit" value="Ok" />
+        <input name="dbg" value="true" style="display:none" />
+    </form>
+</fieldset>
+<fieldset style="border-color:#E2DED6;border-width:1px;border-style:Solid;">
+    <legend style="color:#333333;font-size:0.8em;font-weight:bold;">
+        GET方式
+    </legend>
+    <form name="form1" id="img" method="get" action="./index.php">
+        <input type="text" name="img" id="img" /> <input type="submit"
+            name="submit" value="Ok" />
+        <input name="dbg" value="true" style="display:none" />
+    </form>
+</fieldset>
+</body>
