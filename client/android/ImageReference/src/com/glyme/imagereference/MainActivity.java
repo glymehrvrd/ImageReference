@@ -233,8 +233,9 @@ public class MainActivity extends FragmentActivity {
 						// decode image encoded by base64
 						byte[] imgdata = Base64.decode(imgbase64,
 								Base64.DEFAULT);
-						iv2.setImageBitmap(BitmapFactory.decodeByteArray(
-								imgdata, 0, imgdata.length));
+						Bitmap b = BitmapFactory.decodeByteArray(imgdata, 0,
+								imgdata.length);
+						iv2.setImageBitmap(Bitmap.createScaledBitmap(b, 117, 208, false));
 
 					} catch (JSONException e) {
 						// TODO Auto-generated catch block
@@ -258,7 +259,7 @@ public class MainActivity extends FragmentActivity {
 					HttpClient httpClient = new DefaultHttpClient();
 					HttpPost request = new HttpPost(
 					// "http://gimgdetector.duapp.com/index.php");
-							"http://192.168.1.100/image-detect/index.php");
+							"http://192.168.1.101/IR/index.php");
 
 					// using multipart/form-data
 					MultipartEntity reqEntity = new MultipartEntity(
