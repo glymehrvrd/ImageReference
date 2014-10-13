@@ -11,7 +11,6 @@ if ((! isset($_GET['url']) && ! isset($_FILES['img'])) ||
 require_once 'utils.php';
 $path = 'imgtmp';
 global $imgname;
-
 // 上传的是图片的网址
 if (isset($_GET['url'])) {
     // download image from web, 3MB for max size

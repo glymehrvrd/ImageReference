@@ -13,7 +13,6 @@ function get_best_match($src_img)
     foreach ($filelist as $f) {
         $new_sim = exec("./feature-match " . $f . " " . $src_img);
         $new_sim = intval($new_sim);
-
         if ($new_sim > $sim) {
             $best_match_file = $f;
             $sim = $new_sim;
